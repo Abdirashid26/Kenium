@@ -26,52 +26,42 @@
         android:id="@+id/chipGroup"
         android:layout_width="match_parent"
         android:layout_margin="20dp"
+        app:singleSelection="true"
         android:layout_height="wrap_content">
 
         <com.google.android.material.chip.Chip
             android:id="@+id/cs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/black"
-            android:textColor="@color/white"
             android:checkable="true"
-            style="@style/Widget.MaterialComponents.Chip.Filter"
             android:fontFamily="@font/m_bold"
+            android:textColor="@color/white"
+
             android:text="Computer Science"/>
 
         <com.google.android.material.chip.Chip
             android:id="@+id/bs"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/grey"
-            android:textColor="@color/white"
             android:checkable="true"
-            style="@style/Widget.MaterialComponents.Chip.Filter"
+            android:textColor="@color/white"
 
             android:fontFamily="@font/m_bold"
             android:text="Business"/>
         <com.google.android.material.chip.Chip
             android:id="@+id/ns"
             android:checkable="true"
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/grey"
-            android:textColor="@color/white"
-            style="@style/Widget.MaterialComponents.Chip.Filter"
-
             android:fontFamily="@font/m_bold"
+            android:textColor="@color/white"
             android:text="Nursing"/>
         <com.google.android.material.chip.Chip
             android:id="@+id/sp"
             android:checkable="true"
-
             android:layout_width="wrap_content"
-            style="@style/Widget.MaterialComponents.Chip.Filter"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/grey"
             android:textColor="@color/white"
-            android:fontFamily="@font/m_bold"
             android:text="Sports"/>
 
     </com.google.android.material.chip.ChipGroup>
@@ -81,7 +71,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Computer Science"
-        android:layout_margin="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginVertical="8dp"
         android:textSize="18dp"
         android:id="@+id/filterText"
         android:fontFamily="@font/m_bold"
@@ -93,6 +84,7 @@
         android:layout_height="match_parent"
         android:padding="20dp"
         android:id="@+id/myContent"
+        android:layout_marginBottom="29dp"
         tools:listitem="@layout/article_item"
         />
 

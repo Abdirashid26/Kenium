@@ -103,6 +103,10 @@ class HomeFragment : Fragment() {
         }
 
         lifecycleScope.launch(Dispatchers.IO){
+            bannerList.add(Banner("Computer Science","Come and Learn about the New Wave of Technology",R.drawable.cs))
+            bannerList.add(Banner("Medicine","Find what's new in the world of medical Science",R.drawable.ns))
+            bannerList.add(Banner("Business","The Stock Market is Booming , New Ideas ?",R.drawable.bs2))
+            bannerList.add(Banner("Sports","Premier League, UEFA and many more sport leagues . GET Lit",R.drawable.sp3))
             getArtciles(R.id.cs)
 
         }
@@ -110,15 +114,11 @@ class HomeFragment : Fragment() {
 
 
 
-//        create a banner list
-        bannerList.add(Banner("Computer Science","Come and Learn about the New Wave of Technology",R.drawable.cs))
-        bannerList.add(Banner("Medicine","Find what's new in the world of medical Science",R.drawable.ns))
-        bannerList.add(Banner("Business","The Stock Market is Booming , New Ideas ?",R.drawable.bs2))
-        bannerList.add(Banner("Sports","Premier League, UEFA and many more sport leagues . GET Lit",R.drawable.sp3))
 
 
 
-        lifecycleScope.launch{
+
+        lifecycleScope.launch(Dispatchers.IO){
             banners.adapter = BannerAdapter(requireContext(),bannerList)
 
         }
@@ -149,6 +149,33 @@ class HomeFragment : Fragment() {
         }
         else if(artcileId == R.id.bs){
             mFirestore.collection("bsArticles").addSnapshotListener { value, error ->
+                if(value != null && error == null){
+                    contentsList.clear()
+                    var artciles = value.toObjects(Article::class.java)
+                    contentsList.addAll(artciles)
+                    artcileAdapter.notifyDataSetChanged()
+                }
+                else{
+                    Toast.makeText(requireContext(),"Error : " + error,Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+        else if(artcileId == R.id.ns){
+            mFirestore.collection("nsArticles").addSnapshotListener { value, error ->
+                if(value != null && error == null){
+                    contentsList.clear()
+                    var artciles = value.toObjects(Article::class.java)
+                    contentsList.addAll(artciles)
+                    artcileAdapter.notifyDataSetChanged()
+                }
+                else{
+                    Toast.makeText(requireContext(),"Error : " + error,Toast.LENGTH_SHORT).show()
+                }
+            }
+        }
+
+        else if(artcileId == R.id.sp){
+            mFirestore.collection("spArticles").addSnapshotListener { value, error ->
                 if(value != null && error == null){
                     contentsList.clear()
                     var artciles = value.toObjects(Article::class.java)

@@ -42,7 +42,7 @@ class SearchFragment : Fragment() {
 
 
         rvFullList.adapter = artcileAdapter
-        rvFullList.layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.VERTICAL,true)
+        rvFullList.layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.VERTICAL,false)
 
        searchView.setOnQueryTextListener(object : SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query: String?): Boolean {

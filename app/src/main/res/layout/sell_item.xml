@@ -22,6 +22,9 @@
             android:id="@+id/image"
             android:scaleType="fitXY"
             />
+
+
+
         <TextView
             android:layout_width="180dp"
             android:layout_height="wrap_content"
@@ -36,12 +39,32 @@
         <TextView
             android:layout_width="180dp"
             android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/m_bold"
+            android:textColor="@color/black"
+            android:text="Price"
+            />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
             android:textSize="12dp"
             android:id="@+id/price"
             android:layout_margin="5dp"
             android:fontFamily="@font/m_regular"
             android:textColor="@color/black"
             android:text="Price : Ksh 40,000"
+            />
+
+        <TextView
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textSize="10dp"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/m_bold"
+            android:textColor="@color/black"
+            android:text="Contact Info"
             />
 
         <TextView

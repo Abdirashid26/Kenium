@@ -1,20 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".DownloadsFragment">
+
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DownloadsFragment">
+    >
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Buy from Your Colleagues"
+        android:text="Shop"
         android:fontFamily="@font/m_bold"
         android:textColor="@color/black"
         android:textSize="20dp"
@@ -33,6 +38,15 @@
         android:textSize="20dp"
         android:layout_below="@id/Downloads"
         android:id="@+id/Laptops"
+        />
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/progress_circular"
+        android:visibility="invisible"
+        android:progressBackgroundTint="@color/black"
         />
 
     <androidx.recyclerview.widget.RecyclerView
@@ -57,6 +71,15 @@
         android:id="@+id/phones"
         />
 
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/progress_circular2"
+        android:progressBackgroundTint="@color/black"
+        android:visibility="invisible"
+        />
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -64,13 +87,11 @@
         tools:listitem="@layout/sell_item"
         android:layout_marginHorizontal="20dp"
         android:layout_below="@id/phones"
+        android:layout_marginBottom="50dp"
         />
 
 
 
-
-
-
-
-
 </LinearLayout>
+
+</ScrollView>

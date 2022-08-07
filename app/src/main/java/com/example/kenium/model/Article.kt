@@ -1,5 +1,6 @@
 package com.example.kenium.model
 
+
 data class Article(
     var headline : String = "",
     var summary: String = "",

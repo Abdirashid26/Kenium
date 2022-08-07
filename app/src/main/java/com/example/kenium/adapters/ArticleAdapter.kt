@@ -12,6 +12,7 @@ import com.bumptech.glide.Glide
 import com.example.kenium.R
 import com.example.kenium.model.Article
 import com.google.android.material.chip.Chip
+import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.internal.artificialFrame
 
 class ArticleAdapter (val context: Context, val artcileList : MutableList<Article>) : RecyclerView.Adapter<ArticleAdapter.ViewHolder>() {
@@ -42,4 +43,6 @@ class ArticleAdapter (val context: Context, val artcileList : MutableList<Articl
     override fun getItemCount(): Int {
         return  artcileList.size
     }
+
+
 }

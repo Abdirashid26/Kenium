@@ -20,14 +20,7 @@
         android:text="My Profile" />
 
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_below="@id/myPrfoile"
-        android:src="@drawable/profilefile"
-        android:id="@+id/profileFile"
-        android:layout_marginTop="10dp"
-        />
+
 
 
 
@@ -36,7 +29,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="20dp"
         android:layout_marginVertical="50dp"
-        android:layout_below="@id/profileFile"
+        android:layout_below="@id/myPrfoile"
         android:orientation="vertical">
 
         <!-- TODO: Update blank fragment layout -->
@@ -47,9 +40,9 @@
         <de.hdodenhof.circleimageview.CircleImageView
             xmlns:app="http://schemas.android.com/apk/res-auto"
             android:id="@+id/userImage"
-            android:layout_width="100dp"
+            android:layout_width="400dp"
             android:scaleType="centerCrop"
-            android:layout_height="100dp"
+            android:layout_height="300dp"
             android:layout_gravity="center"
             android:src="@drawable/faisal"
             app:civ_border_width="2dp"
@@ -61,8 +54,9 @@
             android:layout_height="wrap_content"
             android:text="Faisal Abdirashid"
             android:id="@+id/userName"
+            android:layout_marginTop="30dp"
             android:textColor="@color/black"
-            android:textSize="20dp"
+            android:textSize="25dp"
             android:gravity="center"
             android:fontFamily="@font/m_bold"
             />
@@ -97,7 +91,18 @@
             app:cornerRadius="50dp"
             android:text="Edit Profile"
             android:fontFamily="@font/m_bold"
-            android:layout_marginVertical="10dp"
+            android:layout_marginTop="10dp"
+            />
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="60dp"
+            app:cornerRadius="50dp"
+            android:text="Log Out"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/m_bold"
+
             />
 
     </LinearLayout>

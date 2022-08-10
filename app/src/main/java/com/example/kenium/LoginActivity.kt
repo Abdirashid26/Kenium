@@ -55,6 +55,9 @@ class LoginActivity : AppCompatActivity() {
                 if(task.isSuccessful){
                     Snackbar.make(it,"Welcome",Snackbar.LENGTH_SHORT).show()
                     progressCircular.visibility = View.INVISIBLE
+                    val intent = Intent(this,HomeActivity::class.java)
+                    startActivity(intent)
+                    finish()
                 }
                 else{
                     Snackbar.make(it,"Wrong Username/Password",Snackbar.LENGTH_SHORT).show()

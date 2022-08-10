@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ADMIN/OneDrive/Desktop/MyAndroidProjects/Kenium/app/src/main/res/layout/activity_article.xml" value="0.33" />
         <entry key="..\:/Users/ADMIN/OneDrive/Desktop/MyAndroidProjects/Kenium/app/src/main/res/layout/activity_home.xml" value="0.25" />
         <entry key="..\:/Users/ADMIN/OneDrive/Desktop/MyAndroidProjects/Kenium/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/ADMIN/OneDrive/Desktop/MyAndroidProjects/Kenium/app/src/main/res/layout/activity_main.xml" value="0.25" />
@@ -10,6 +11,7 @@
         <entry key="..\:/Users/ADMIN/OneDrive/Desktop/MyAndroidProjects/Kenium/app/src/main/res/layout/article_item.xml" value="0.25" />
         <entry key="..\:/Users/ADMIN/OneDrive/Desktop/MyAndroidProjects/Kenium/app/src/main/res/layout/background.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/ADMIN/OneDrive/Desktop/MyAndroidProjects/Kenium/app/src/main/res/layout/banner_item.xml" value="0.25" />
+        <entry key="..\:/Users/ADMIN/OneDrive/Desktop/MyAndroidProjects/Kenium/app/src/main/res/layout/fragment_article.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/ADMIN/OneDrive/Desktop/MyAndroidProjects/Kenium/app/src/main/res/layout/fragment_downloads.xml" value="0.20114345114345114" />
         <entry key="..\:/Users/ADMIN/OneDrive/Desktop/MyAndroidProjects/Kenium/app/src/main/res/layout/fragment_home.xml" value="0.2861111111111111" />
         <entry key="..\:/Users/ADMIN/OneDrive/Desktop/MyAndroidProjects/Kenium/app/src/main/res/layout/fragment_profile.xml" value="0.33" />

@@ -46,10 +46,12 @@ class ArticleAdapter (val context: Context, val artcileList : MutableList<Articl
 
 
         holder.itemView.setOnClickListener {
-            Toast.makeText(context,"Pressed !",Toast.LENGTH_SHORT).show()
-            val intent = Intent(holder.itemView.context,ArticleActivity::class.java)
+            val intent = Intent(holder.itemView.context, ArticleActivity::class.java)
+            intent.putExtra("Article",artcileList.get(position))
+
 
             context.startActivity(intent)
+
 
 
 

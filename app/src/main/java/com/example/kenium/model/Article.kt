@@ -1,5 +1,7 @@
 package com.example.kenium.model
 
+import java.io.Serializable
+
 
 data class Article(
     var headline : String = "",
@@ -8,5 +10,5 @@ data class Article(
     var likes: Int = 0,
     var file : String = "",
     var author : String =""
-)
+) : Serializable
 

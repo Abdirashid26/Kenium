@@ -31,6 +31,13 @@
     </Transition>
 
     <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:layout_width="409dp"
+            android:layout_height="470dp"
+            motion:layout_editor_absoluteX="1dp"
+            android:id="@+id/scrollView3"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/heading" />
     </ConstraintSet>
 
     <ConstraintSet android:id="@+id/end">
@@ -39,14 +46,20 @@
             android:layout_width="414dp"
             android:id="@+id/image" />
         <Constraint
-            android:layout_height="439dp"
-            motion:layout_constraintStart_toStartOf="@id/heading"
-            motion:layout_constraintHorizontal_bias="1.0"
+            android:layout_height="384dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintHorizontal_bias="0.205"
             motion:layout_constraintEnd_toEndOf="parent"
-            android:layout_width="409dp"
+            android:layout_width="369dp"
             android:id="@+id/scrollView2"
             motion:layout_constraintTop_toBottomOf="@id/image"
-            motion:layout_constraintVertical_bias="0.235"
+            motion:layout_constraintVertical_bias="0.224"
             motion:layout_constraintBottom_toBottomOf="parent" />
+        <Constraint
+            android:layout_height="wrap_content"
+            motion:layout_editor_absoluteX="1dp"
+            android:layout_width="match_parent"
+            motion:layout_constraintTop_toBottomOf="@+id/heading"
+            android:id="@+id/scrollView3" />
     </ConstraintSet>
 </MotionScene>
